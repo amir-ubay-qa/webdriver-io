@@ -6,14 +6,14 @@ Portfolio automate test with webdriver-io
 1. Clone or fork this repository
 2. Install the dependencies
    > npm install
-3. Run the testrune
+3. Run the test runer
    > npx wdio
 
 This test using spec reporter and headless chrome. Change the browser capabilites if you want to run in head mode.
 
 ## Amazon
 
-### (1. Redirection)
+### [1. Redirection](https://github.com/amir-ubay-qa/webdriver-io/blob/master/test/amazon/specs/01-redirections.js)
 
 #### Home Page Redirection Links
 
@@ -26,7 +26,7 @@ This test using spec reporter and headless chrome. Change the browser capabilite
 7. Verify gift card page can be accessed
 8. Verify sell page can be accessed
 
-### (2. UI Elements)
+### [2. UI Elements](https://github.com/amir-ubay-qa/webdriver-io/blob/master/test/amazon/specs/02-ui-elements.js)
 
 ### Authentication pages
 
