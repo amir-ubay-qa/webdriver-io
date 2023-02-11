@@ -1,11 +1,7 @@
 import Signin from "../pageobjects/signin.page.js"
 
-describe('Verify ui elements of pages', () => {
-   beforeEach(async () => {
-      await browser.url('https://www.amazon.com')
-   })
-
-   it('Verify sign in page elements with page objects', async () => {
+describe('Verify ui elements of authentication pages', () => {
+   it('Verify sign in page elements (with page objects)', async () => {
       await Signin.open();
       await Signin.verifyTitle("Sign in");
       await Signin.verifySubmitButton();
@@ -16,7 +12,8 @@ describe('Verify ui elements of pages', () => {
       await Signin.verifyBtnCreateAccount();
    })
 
-   it('Verify create account page elements wihtout page objects', async () => {
+   it('Verify create account page elements (wihtout page objects)', async () => {
+      // Variables
       const btnCreateAccount = await $('#createAccountSubmit')
       const btnSignIn = await $('#nav-link-accountList');
       const titlePage = await $('h1.a-spacing-small');
@@ -33,7 +30,8 @@ describe('Verify ui elements of pages', () => {
       const btnBackSignin = await $('a*=Sign in')
       const btnCreateBusinessAccount = await $('a*=Create a free business account')
 
-
+      // Main Test
+      await browser.url('https://www.amazon.com')
       await btnSignIn.click();
       await expect(browser).toHaveTitle('Amazon Sign-In')
       await btnCreateAccount.click();
