@@ -28,7 +28,7 @@ This test using spec reporter and headless chrome. Change the browser capabilite
 
 ### [2. UI Elements](https://github.com/amir-ubay-qa/webdriver-io/blob/master/test/amazon/specs/02-ui-elements.js)
 
-### Authentication pages
+#### Authentication pages
 
 1. Verify sign page elements (with page objects)
 2. Verify create account page elements (without page objects)
